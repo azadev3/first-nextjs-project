@@ -1,0 +1,42 @@
+@use '../styles/mix.scss' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: #fff;
+  .author-name {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    background-color: mediumspringgreen;
+    padding: 8px 18px;
+    border-radius: 2px;
+    margin-top: 8px;
+    h3 {
+      text-transform: lowercase;
+      font-weight: bold;
+      color: black;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: normal;
+      .author {
+        transition: 200ms ease;
+        color: black;
+        font-weight: bold;
+        padding: 0 5px;
+        text-decoration: none;
+        &:hover {
+          color: royalblue;
+        }
+      }
+    }
+  }
+}

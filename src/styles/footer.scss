@@ -1,0 +1,55 @@
+@use '../styles/mix.scss' as *;
+
+.footer-wrapper {
+  width: 100%;
+  padding: 48px 80px;
+  background-color: rgb(10, 13, 26);
+  .footer {
+    width: 100%;
+    @include flexcol();
+    gap: 24px;
+    max-width: 1360px;
+    margin: 0 auto;
+    .top {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-items: flex-start;
+      align-items: flex-start;
+      gap: 32px;
+      .item-footer {
+        width: 100%;
+        @include flexcol();
+        gap: 21px;
+        h3 {
+          font-weight: 500;
+          color: white;
+          font-size: 18px;
+        }
+        .links {
+          @include flexcol();
+          gap: 8px;
+          width: 100%;
+          .link {
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: normal;
+            transition: 200ms ease;
+            &:hover {
+              color: royalblue;
+            }
+          }
+        }
+      }
+    }
+    .bottom {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 24px;
+    }
+  }
+}
