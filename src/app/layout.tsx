@@ -3,7 +3,7 @@ import Header from '@/components/header/Header';
 import type { Metadata } from 'next';
 import { Quicksand } from 'next/font/google';
 
-export const quickSand = Quicksand({
+const quickSand = Quicksand({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
 });
